@@ -1,0 +1,18 @@
+<%- include("../../partials/header"); %>
+
+<div class="root">
+    <div class="header">
+        <h1>Let's Get The Cash Out</h1>
+        <% if (data.invalid_amount === true) { %>
+            <h3>Invalid Amount</h3>
+        <% }  %>
+    </div>
+    <div class="form">
+        <form action="/withdraw_amount" method="POST">
+            <input type="number" class="amount" placeholder="Enter the amount you want to withdraw" name="amount">
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</div>
+
+<%- include("../../partials/footer"); %>

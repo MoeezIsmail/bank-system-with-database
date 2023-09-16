@@ -1,0 +1,27 @@
+<%- include("../../partials/header"); %>
+
+<div class="root">
+    <div class="header">
+        <h1>Select the Bank</h1>
+        <% if (data.invalid_amount === true) { %>
+            <h3>Invalid Amount</h3>
+        <% } else if (data.user_do_not_exists === true) { %>
+            <h3>User doesn't Exists</h3>
+        <% } else if (data.invalid_password === true) { %>
+            <h3>Invalid Password</h3>
+        <% } else if(data.enter_complete_data == true) {%>
+            <h3>Enter Complete Data </h3>
+        <% } %>
+    </div>
+    <div class="form">
+        <form action="/transfer_money" method="POST">
+            <select name="bank">
+                <option value="hbl">HBL</option>
+                <option value="meezan_bank">Meezan Bank</option>
+            </select>
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</div>
+
+<%- include("../../partials/footer"); %>

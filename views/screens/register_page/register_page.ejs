@@ -1,0 +1,36 @@
+<%- include("../../partials/header"); %>
+
+<div class="root">
+    <div class="header">
+        <h1>Let's Create your account</h1>
+        <% if (data.invalid_password !== undefined) { %>
+            <h3>Password length should be greater than 8 and it should conntain atleast one capital alphabet and a special character </h3>
+        <% } else if (data.user_already_exists === true) { %>
+            <h3>User Already Exists</h3>
+        <% } else if (data.enter_complete_data) {%>
+            <h3>Enter Complete Data [titu partiyan ni krni]</h3>
+        <% } %>
+
+
+
+    </div>
+    <div class="form">
+        <form action="/register" method="POST" enctype="multipart/form-data">
+            <div class="img">
+                <div class="circular-file-input">
+                    <input type="file" accept="image/*" name="img">
+                    <span>Choose File</span>
+                </div>
+            </div>
+
+            <input type="text" class="first-name" placeholder="First Name" name="first_name">
+            <input type="text" class="last-name" placeholder="Last Name" name="last_name">
+            <input type="email" class="email" placeholder="Email" name="email">
+            <input type="password" class="password" placeholder="Password" name="password">
+            <input type="number" class="amount" placeholder="Enter Amount" name="amount">
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</div>
+
+<%- include("../../partials/footer"); %>

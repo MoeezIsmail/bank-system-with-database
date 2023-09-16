@@ -1,0 +1,16 @@
+<%- include("../../partials/header"); %>
+
+<div class="root">
+    <div class="header">
+        <h1>Enter 2 numbers</h1>
+    </div>
+    <div class="form">
+        <form action="/call_api" method="get">
+            <input type="number" class="n1" name="first_number" placeholder="Enter first number">
+            <input type="number" class="n2" placeholder="Enter second number" name="second_number">
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</div>
+
+<%- include("../../partials/footer"); %>

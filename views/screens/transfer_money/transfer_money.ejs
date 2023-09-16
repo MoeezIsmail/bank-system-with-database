@@ -1,0 +1,17 @@
+<%- include("../../partials/header"); %>
+
+<div class="root">
+    <div class="header">
+        <h1>Let's Send The Cash</h1>
+    </div>
+    <div class="form">
+        <form action="/password" method="POST">
+            <input type="number" class="amount" placeholder="Enter the amount you want to send" name="amount">
+            <input type="email" class="email" placeholder="Enter the email you want to send" name="email">
+            <input type="hidden" class="bank" name="bank" value="<%= bank %>">
+            <input type="submit" class="btn">
+        </form>
+    </div>
+</div>
+
+<%- include("../../partials/footer"); %>

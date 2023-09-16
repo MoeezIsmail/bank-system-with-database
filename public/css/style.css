@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-direction: column;
+    background: black;
+    color: floralwhite;
+}
+
+.root .header {
+    background: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+}
+
+.root .header h1,h3 {
+    letter-spacing: 2px;
+    color: black;
+    border-bottom: 5px dashed black;
+    letter-spacing: 2px;
+    font-family: "Droid Sans";
+}
+
+.root .header h3 {
+    margin-top: 10px;
+}
+
+.root .main-heading {
+    /*background-color: chocolate;*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.root .main-heading .image {
+    flex: 1;
+    /*background-color: limegreen;*/
+    display: flex;
+    justify-content: right;
+}
+
+.root .main-heading .h1 {
+    flex: 2;
+    /*background-color: #2980b9;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*padding-right: 418px;*/
+    margin-left: 230px;
+}
+
+.root .main-heading img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.root .form {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    /*background: dodgerblue;*/
+}
+
+.root .form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    /*background: floralwhite;*/
+    margin-top: 50px;
+}
+
+.root .form form input {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid floralwhite;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: black;
+    color: floralwhite;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 10px 0 10px 0;
+}
+
+.root .form form .btn {
+    width: 250px;
+    padding-left: 0;
+    border: 2px solid floralwhite;
+    background: black;
+    border-radius: 20px 5px 20px 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.root .form form .btn:hover {
+    background: green;
+    letter-spacing: 5px;
+}
+
+.root .form form input::placeholder {
+    color: floralwhite;
+}
+
+.root .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    /*background: mintcream;*/
+    margin-top: 90px;
+}
+
+.root .middle a  {
+    width: 200px;
+    height: 80px;
+    border-radius: 20px 0 20px 0px;
+    background: blanchedalmond;
+    margin-top: 30px;
+}
+
+.root .middle a button {
+    width: 200px;
+    height: 80px;
+    border-radius: 20px 0 20px 0px;
+    background: blanchedalmond;
+    /*margin-top: 30px;*/
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: floralwhite;
+}
+
+.wrapper .card {
+    width: 40%;
+    height: 200px;
+    background: blanchedalmond;
+    letter-spacing: 2px;
+    font-family: "Source Sans 3 Semibold";
+    font-size: 20px;
+    color: black;
+    margin: 10px 0 0 10px;
+}
+
+.wrapper .card p {
+    margin: 20px 0 0 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+a button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px 0 20px 0px;
+    background: blanchedalmond;
+    /*margin-top: 30px;*/
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+a button:hover {
+    background-color: red;
+    letter-spacing: 5px;
+}
+
+.form form select {
+    width: 20%;
+    height: 9%;
+    background-color: black;
+    color: floralwhite;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form form select option {
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.table {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table table {
+    width: 90%;
+    border: 2px solid blanchedalmond;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.table table td,th {
+    border: 2px solid blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+    height: 35px;
+}
+
+.table table td a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.table table td a:hover {
+    letter-spacing: 1px;
+    color: red;
+}
+
+
+.circular-file-input {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: chocolate;*/
+    margin-bottom: 50px;
+}
+
+.circular-file-input input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Optional: Hover and focus styles */
+.circular-file-input:hover {
+    background-color: #2980b9;
+}
+
+.circular-file-input:focus-within {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
